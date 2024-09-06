@@ -88,13 +88,14 @@ const Catelogy = () => {
           </div>
         </div>
       </div>
+
       <div className="w-full flex flex-wrap justify-between px-24 mb-4 mb-71">
         {/* Sản phẩm 1 */}
-        <div className="flex flex-col space-y-2 w-[250px] mb-4">
+        <div className="flex flex-col space-y-2 w-[315px] mb-4">
           <img
             src={img1}
             alt="Product 1"
-            className="w-[250px] object-contain"
+            className="w-[316px] object-contain"
           />
           <div className="flex flex-col space-y-2">
             <span className="text-[13px] text-black font-montserrat font-bold">
@@ -115,11 +116,11 @@ const Catelogy = () => {
         </div>
 
         {/* Sản phẩm 2 */}
-        <div className="flex flex-col space-y-2 w-[250px] mb-4">
+        <div className="flex flex-col space-y-2 w-[315px] mb-4">
           <img
             src={img2}
             alt="Product 2"
-            className="w-[250px] object-contain"
+            className="w-[316px] object-contain"
           />
           <div className="flex flex-col space-y-2">
             <span className="text-[13px] text-black font-montserrat font-bold">
@@ -140,11 +141,11 @@ const Catelogy = () => {
         </div>
 
         {/* Sản phẩm 3 */}
-        <div className="flex flex-col space-y-2 w-[250px] mb-4">
+        <div className="flex flex-col space-y-2 w-[315px] mb-4">
           <img
             src={img3}
             alt="Product 3"
-            className="w-[250px] object-contain"
+            className="w-[316px] object-contain"
           />
           <div className="flex flex-col space-y-2">
             <span className="text-[13px] text-black font-montserrat font-bold">
@@ -165,11 +166,11 @@ const Catelogy = () => {
         </div>
 
         {/* Sản phẩm 4 */}
-        <div className="flex flex-col space-y-2 w-[250px] mb-4">
+        <div className="flex flex-col space-y-2 w-[315px] mb-4">
           <img
             src={img4}
             alt="Product 4"
-            className="w-[250px] object-contain"
+            className="w-[316px] object-contain"
           />
           <div className="flex flex-col space-y-2">
             <span className="text-[13px] text-black font-montserrat font-bold">
@@ -191,11 +192,11 @@ const Catelogy = () => {
       </div>
       <div className="w-full flex flex-wrap justify-between px-24 mb-4 mb-71">
         {/* Sản phẩm 1 */}
-        <div className="flex flex-col space-y-2 w-[250px] mb-4">
+        <div className="flex flex-col space-y-2 w-[315px] mb-4">
           <img
             src={img1}
             alt="Product 1"
-            className="w-[250px] object-contain"
+            className="w-[316px] object-contain"
           />
           <div className="flex flex-col space-y-2">
             <span className="text-[13px] text-black font-montserrat font-bold">
@@ -216,11 +217,11 @@ const Catelogy = () => {
         </div>
 
         {/* Sản phẩm 2 */}
-        <div className="flex flex-col space-y-2 w-[250px] mb-4">
+        <div className="flex flex-col space-y-2 w-[315px] mb-4">
           <img
             src={img2}
             alt="Product 2"
-            className="w-[250px] object-contain"
+            className="w-[316px] object-contain"
           />
           <div className="flex flex-col space-y-2">
             <span className="text-[13px] text-black font-montserrat font-bold">
@@ -241,11 +242,11 @@ const Catelogy = () => {
         </div>
 
         {/* Sản phẩm 3 */}
-        <div className="flex flex-col space-y-2 w-[250px] mb-4">
+        <div className="flex flex-col space-y-2 w-[315px] mb-4">
           <img
             src={img3}
             alt="Product 3"
-            className="w-[250px] object-contain"
+            className="w-[316px] object-contain"
           />
           <div className="flex flex-col space-y-2">
             <span className="text-[13px] text-black font-montserrat font-bold">
@@ -266,11 +267,11 @@ const Catelogy = () => {
         </div>
 
         {/* Sản phẩm 4 */}
-        <div className="flex flex-col space-y-2 w-[250px] mb-4">
+        <div className="flex flex-col space-y-2 w-[315px] mb-4">
           <img
             src={img4}
             alt="Product 4"
-            className="w-[250px] object-contain"
+            className="w-[316px] object-contain"
           />
           <div className="flex flex-col space-y-2">
             <span className="text-[13px] text-black font-montserrat font-bold">
@@ -292,11 +293,11 @@ const Catelogy = () => {
       </div>
       <div className="w-full flex flex-wrap justify-between px-24 mb-4 mb-71">
         {/* Sản phẩm 1 */}
-        <div className="flex flex-col space-y-2 w-[250px] mb-4">
+        <div className="flex flex-col space-y-2 w-[315px] mb-4">
           <img
             src={img1}
             alt="Product 1"
-            className="w-[250px] object-contain"
+            className="w-[316px] object-contain"
           />
           <div className="flex flex-col space-y-2">
             <span className="text-[13px] text-black font-montserrat font-bold">
@@ -317,11 +318,11 @@ const Catelogy = () => {
         </div>
 
         {/* Sản phẩm 2 */}
-        <div className="flex flex-col space-y-2 w-[250px] mb-4">
+        <div className="flex flex-col space-y-2 w-[315px] mb-4">
           <img
             src={img2}
             alt="Product 2"
-            className="w-[250px] object-contain"
+            className="w-[316px] object-contain"
           />
           <div className="flex flex-col space-y-2">
             <span className="text-[13px] text-black font-montserrat font-bold">
@@ -342,11 +343,11 @@ const Catelogy = () => {
         </div>
 
         {/* Sản phẩm 3 */}
-        <div className="flex flex-col space-y-2 w-[250px] mb-4">
+        <div className="flex flex-col space-y-2 w-[315px] mb-4">
           <img
             src={img3}
             alt="Product 3"
-            className="w-[250px] object-contain"
+            className="w-[316px] object-contain"
           />
           <div className="flex flex-col space-y-2">
             <span className="text-[13px] text-black font-montserrat font-bold">
@@ -367,11 +368,11 @@ const Catelogy = () => {
         </div>
 
         {/* Sản phẩm 4 */}
-        <div className="flex flex-col space-y-2 w-[250px] mb-4">
+        <div className="flex flex-col space-y-2 w-[315px] mb-4">
           <img
             src={img4}
             alt="Product 4"
-            className="w-[250px] object-contain"
+            className="w-[316px] object-contain"
           />
           <div className="flex flex-col space-y-2">
             <span className="text-[13px] text-black font-montserrat font-bold">
@@ -393,11 +394,11 @@ const Catelogy = () => {
       </div>
       <div className="w-full flex flex-wrap justify-between px-24 mb-4 mb-71">
         {/* Sản phẩm 1 */}
-        <div className="flex flex-col space-y-2 w-[250px] mb-4">
+        <div className="flex flex-col space-y-2 w-[315px] mb-4">
           <img
             src={img1}
             alt="Product 1"
-            className="w-[250px] object-contain"
+            className="w-[316px] object-contain"
           />
           <div className="flex flex-col space-y-2">
             <span className="text-[13px] text-black font-montserrat font-bold">
@@ -418,11 +419,11 @@ const Catelogy = () => {
         </div>
 
         {/* Sản phẩm 2 */}
-        <div className="flex flex-col space-y-2 w-[250px] mb-4">
+        <div className="flex flex-col space-y-2 w-[315px] mb-4">
           <img
             src={img2}
             alt="Product 2"
-            className="w-[250px] object-contain"
+            className="w-[316px] object-contain"
           />
           <div className="flex flex-col space-y-2">
             <span className="text-[13px] text-black font-montserrat font-bold">
@@ -443,11 +444,11 @@ const Catelogy = () => {
         </div>
 
         {/* Sản phẩm 3 */}
-        <div className="flex flex-col space-y-2 w-[250px] mb-4">
+        <div className="flex flex-col space-y-2 w-[315px] mb-4">
           <img
             src={img3}
             alt="Product 3"
-            className="w-[250px] object-contain"
+            className="w-[316px] object-contain"
           />
           <div className="flex flex-col space-y-2">
             <span className="text-[13px] text-black font-montserrat font-bold">
@@ -468,11 +469,11 @@ const Catelogy = () => {
         </div>
 
         {/* Sản phẩm 4 */}
-        <div className="flex flex-col space-y-2 w-[250px] mb-4">
+        <div className="flex flex-col space-y-2 w-[315px] mb-4">
           <img
             src={img4}
             alt="Product 4"
-            className="w-[250px] object-contain"
+            className="w-[316px] object-contain"
           />
           <div className="flex flex-col space-y-2">
             <span className="text-[13px] text-black font-montserrat font-bold">
@@ -494,11 +495,11 @@ const Catelogy = () => {
       </div>
       <div className="w-full flex flex-wrap justify-between px-24 mb-4 mb-71">
         {/* Sản phẩm 1 */}
-        <div className="flex flex-col space-y-2 w-[250px] mb-4">
+        <div className="flex flex-col space-y-2 w-[315px] mb-4">
           <img
             src={img1}
             alt="Product 1"
-            className="w-[250px] object-contain"
+            className="w-[316px] object-contain"
           />
           <div className="flex flex-col space-y-2">
             <span className="text-[13px] text-black font-montserrat font-bold">
@@ -519,11 +520,11 @@ const Catelogy = () => {
         </div>
 
         {/* Sản phẩm 2 */}
-        <div className="flex flex-col space-y-2 w-[250px] mb-4">
+        <div className="flex flex-col space-y-2 w-[315px] mb-4">
           <img
             src={img2}
             alt="Product 2"
-            className="w-[250px] object-contain"
+            className="w-[316px] object-contain"
           />
           <div className="flex flex-col space-y-2">
             <span className="text-[13px] text-black font-montserrat font-bold">
@@ -544,11 +545,11 @@ const Catelogy = () => {
         </div>
 
         {/* Sản phẩm 3 */}
-        <div className="flex flex-col space-y-2 w-[250px] mb-4">
+        <div className="flex flex-col space-y-2 w-[315px] mb-4">
           <img
             src={img3}
             alt="Product 3"
-            className="w-[250px] object-contain"
+            className="w-[316px] object-contain"
           />
           <div className="flex flex-col space-y-2">
             <span className="text-[13px] text-black font-montserrat font-bold">
@@ -569,11 +570,11 @@ const Catelogy = () => {
         </div>
 
         {/* Sản phẩm 4 */}
-        <div className="flex flex-col space-y-2 w-[250px] mb-4">
+        <div className="flex flex-col space-y-2 w-[315px] mb-4">
           <img
             src={img4}
             alt="Product 4"
-            className="w-[250px] object-contain"
+            className="w-[316px] object-contain"
           />
           <div className="flex flex-col space-y-2">
             <span className="text-[13px] text-black font-montserrat font-bold">
