@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import newsObject01 from "../assets/images/news-object-01.webp";
 import newsObject02 from "../assets/images/news-object-02.webp";
@@ -12,6 +13,11 @@ import newsImg04 from "../assets/images/news-img-04.png";
 import newsImg05 from "../assets/images/news-img-05.png";
 
 export default function PageB() {
+  const navigate = useNavigate(); // Hook for navigation
+
+  const handleSeeMoreClick = () => {
+    navigate("/shop"); // Navigate to /shop when button is clicked
+  };
   return (
     <div className="bg-[#fccb05] relative flex flex-col items-center py-24">
       <span className="text-[36px] uppercase font-montserrat font-bold text-black">
@@ -23,7 +29,10 @@ export default function PageB() {
         걸음을 내딛어보세요. 비디오를 단 몇 분 만에 제작해보세요.
       </span>
       <div>
-        <button className="border-[3px] font-montserrat border-black px-8 py-3 text-[16px] font-extrabold">
+        <button
+          className="border-[3px] font-montserrat border-black px-8 py-3 text-[16px] font-extrabold"
+          onClick={handleSeeMoreClick} // Attach the click handler
+        >
           SEE MORE
         </button>
       </div>
