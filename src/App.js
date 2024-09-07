@@ -7,6 +7,7 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import MainPage from "./pages/MainPage";
 import ShopPage from "./pages/ShopPage";
+import IntroducePage from "./pages/IntroducePage";
 import Footer from "./ui/Footer";
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/shop" element={<ShopPage />} />
+          <Route path="/introduce" element={<IntroducePage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
         </Routes>

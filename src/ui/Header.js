@@ -14,9 +14,15 @@ export default function Header() {
         <img src={webLogo} alt="logo" />
       </div>
       <div className="flex flex-row items-center space-x-8">
-        <span className="hover:cursor-pointer hover:text-zinc-300 text-white font-medium font-montserrat uppercase text-[14px]">
+        <span
+          onClick={() => {
+            window.location.href = "/introduce";
+          }}
+          className="hover:cursor-pointer hover:text-zinc-300 text-white font-medium font-montserrat uppercase text-[14px]"
+        >
           Introduction
         </span>
+
         <span className="hover:cursor-pointer hover:text-zinc-300 text-white font-medium font-montserrat uppercase text-[14px]">
           solution
         </span>
