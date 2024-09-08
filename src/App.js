@@ -8,6 +8,7 @@ import RegisterPage from "./pages/RegisterPage";
 import MainPage from "./pages/MainPage";
 import ShopPage from "./pages/ShopPage";
 import IntroducePage from "./pages/IntroducePage";
+import PriavacyPage from "./pages/PriavacyPage";
 import Footer from "./ui/Footer";
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/" element={<MainPage />} />
           <Route path="/shop" element={<ShopPage />} />
           <Route path="/introduce" element={<IntroducePage />} />
+          <Route path="/priavacy" element={<PriavacyPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
         </Routes>
