@@ -1,4 +1,10 @@
 import React from "react";
+import { MdOutlineLocalShipping } from "react-icons/md";
+import { MdOutlineReceiptLong } from "react-icons/md";
+import { FaUser } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
+import { FaTicketAlt } from "react-icons/fa";
+import { FaClipboard } from "react-icons/fa";
 
 function MyPage() {
   return (
@@ -158,88 +164,63 @@ function MyPage() {
 
       <div className=" h-[2px] my-[14px]  bg-[#222]"></div>
 
-      <div className="flex justify-between w-full ">
-        <div className="w-[245px] h-[125px] bg-[#f8f9ff] p-[27px_92px_30px_91px] flex flex-col items-center">
-          <img
-            src="path-to-your-image.jpg"
-            alt="Description"
-            className="w-[100px] h-[70px] mb-3"
-          />
-          <span className="text-[18px] font-normal leading-[1.33] text-[#111]">
-            Text 1
+      <div className="flex justify-between w-full mb-20 mt-10">
+        <div className="w-[245px] h-[125px] bg-[#f8f9ff] pt-2 flex flex-col items-center">
+          <MdOutlineReceiptLong className="w-[66px] h-[49px]" />
+          <span className="text-[18px] font-bold leading-[1.33] text-[#111]">
+            ORDER
           </span>
           <span className="text-[18px] font-normal leading-[1.33] text-[#111]">
-            Text 2
+            주문내역
+          </span>
+        </div>
+        <div className="w-[245px] h-[125px] bg-[#f8f9ff] pt-2 flex flex-col items-center">
+          <FaUser className="w-[66px] h-[49px]" />
+          <span className="text-[18px] font-bold leading-[1.33] text-[#111]">
+            PROFILE
+          </span>
+          <span className="text-[18px] font-normal leading-[1.33] text-[#111]">
+            회원정보
           </span>
         </div>
 
-        <div className="w-[245px] h-[125px] bg-[#f8f9ff] p-[27px_87px_30px] flex flex-col items-center">
-          <img
-            src="path-to-your-image.jpg"
-            alt="Description"
-            className="w-[100px] h-[70px] mb-3"
-          />
-          <span className="text-[18px] font-normal leading-[1.33] text-[#111]">
-            Text 1
+        <div className="w-[245px] h-[125px] bg-[#f8f9ff] pt-2 flex flex-col items-center">
+          <FaHeart className="w-[66px] h-[49px]" />
+          <span className="text-[18px] font-bold leading-[1.33] text-[#111]">
+            WISHLIST
           </span>
           <span className="text-[18px] font-normal leading-[1.33] text-[#111]">
-            Text 2
+            관심상품
           </span>
         </div>
 
-        <div className="w-[245px] h-[125px] bg-[#f8f9ff] p-[27px_90px_30px] flex flex-col items-center">
-          <img
-            src="path-to-your-image.jpg"
-            alt="Description"
-            className="w-[100px] h-[70px] mb-3"
-          />
-          <span className="text-[18px] font-normal leading-[1.33] text-[#111]">
-            Text 1
+        <div className="w-[245px] h-[125px] bg-[#f8f9ff] pt-2 flex flex-col items-center">
+          <FaTicketAlt className="w-[66px] h-[49px]" />
+          <span className="text-[18px] font-bold leading-[1.33] text-[#111]">
+            COUPON
           </span>
           <span className="text-[18px] font-normal leading-[1.33] text-[#111]">
-            Text 2
+            쿠폰
           </span>
         </div>
 
-        <div className="w-[245px] h-[125px] bg-[#f8f9ff] p-[27px_89px_30px_90px] flex flex-col items-center">
-          <img
-            src="path-to-your-image.jpg"
-            alt="Description"
-            className="w-[100px] h-[70px] mb-3"
-          />
-          <span className="text-[18px] font-normal leading-[1.33] text-[#111]">
-            Text 1
+        <div className="w-[245px] h-[125px] bg-[#f8f9ff] pt-2 flex flex-col items-center">
+          <FaClipboard className="w-[66px] h-[49px]" />
+          <span className="text-[18px] font-bold leading-[1.33] text-[#111]">
+            BOARD
           </span>
           <span className="text-[18px] font-normal leading-[1.33] text-[#111]">
-            Text 2
+            보드
           </span>
         </div>
 
-        <div className="w-[245px] h-[125px] bg-[#f8f9ff] p-[27px_87px_30px] flex flex-col items-center">
-          <img
-            src="path-to-your-image.jpg"
-            alt="Description"
-            className="w-[100px] h-[70px] mb-3"
-          />
-          <span className="text-[18px] font-normal leading-[1.33] text-[#111]">
-            Text 1
+        <div className="w-[245px] h-[125px] bg-[#f8f9ff] pt-2 flex flex-col items-center">
+          <MdOutlineLocalShipping className="w-[66px] h-[49px]" />
+          <span className="text-[18px] font-bold leading-[1.33] text-[#111]">
+            ADDRESS
           </span>
           <span className="text-[18px] font-normal leading-[1.33] text-[#111]">
-            Text 2
-          </span>
-        </div>
-
-        <div className="w-[245px] h-[125px] bg-[#f8f9ff] p-[30px_96px] flex flex-col items-center">
-          <img
-            src="path-to-your-image.jpg"
-            alt="Description"
-            className="w-[100px] h-[70px] mb-3"
-          />
-          <span className="text-[18px] font-normal leading-[1.33] text-[#111]">
-            Text 1
-          </span>
-          <span className="text-[18px] font-normal leading-[1.33] text-[#111]">
-            Text 2
+            배송 관리
           </span>
         </div>
       </div>
