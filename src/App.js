@@ -8,6 +8,7 @@ import RegisterPage from "./pages/RegisterPage";
 import MainPage from "./pages/MainPage";
 import ShopPage from "./pages/ShopPage";
 import ProductPage from "./pages/ProductPage";
+import ShoppingCart from "./ui/ShoppingCart";
 import IntroducePage from "./pages/IntroducePage";
 import MyPage from "./pages/MyPage";
 import PriavacyPage from "./pages/PriavacyPage";
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/shop" element={<ShopPage />} />
           <Route path="/introduce" element={<IntroducePage />} />
           <Route path="/product/:id" element={<ProductPage />} />
+          <Route path="/shoping" element={<ShoppingCart />} />
           <Route path="/mypage" element={<MyPage />} />
           <Route path="/priavacy" element={<PriavacyPage />} />
           <Route path="/login" element={<LoginPage />} />
