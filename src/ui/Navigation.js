@@ -31,67 +31,35 @@ export default function Navigation() {
         <img
           src={videoObject05}
           alt="video object 05"
-          className="w-[146px] h-[114px] object-contain"
+          className=" object-contain"
         />
       </div>
       <div className="absolute top-[12%] right-24">
-        <img
-          src={videoObject07}
-          alt="video object 07"
-          className="w-[260px] h-auto"
-        />
+        <img src={videoObject07} alt="video object 07" className="h-auto" />
       </div>
       <div className="absolute top-[20%] right-48">
-        <img
-          src={videoObject06}
-          alt="video object 06"
-          className="w-[260px] h-auto"
-        />
+        <img src={videoObject06} alt="video object 06" className=" h-auto" />
       </div>
       <div className="absolute -left-[13%] top-[30%]">
-        <img
-          src={videoObject04}
-          alt="video object 04"
-          className="w-[1251px] h-auto"
-        />
+        <img src={videoObject04} alt="video object 04" className=" h-auto" />
       </div>
       <div className="absolute -right-[15%] top-[50%]">
-        <img
-          src={videoObject09}
-          alt="video object 09"
-          className="w-[1251px] h-auto"
-        />
+        <img src={videoObject09} alt="video object 09" className=" h-auto" />
       </div>
       <div className="absolute -right-[20%] top-[70%]">
-        <img
-          src={videoObject08}
-          alt="video object 08"
-          className="w-[1251px] h-auto"
-        />
+        <img src={videoObject08} alt="video object 08" className=" h-auto" />
       </div>
       <div className="absolute -bottom-20 left-[12%]">
-        <img
-          src={videoObject03}
-          alt="video object 03"
-          className="w-[1251px] h-auto"
-        />
+        <img src={videoObject03} alt="video object 03" className=" h-auto" />
       </div>
       <div className="absolute -bottom-52 left-[18%]">
-        <img
-          src={videoObject01}
-          alt="video object 01"
-          className="w-[1251px] h-auto"
-        />
+        <img src={videoObject01} alt="video object 01" className=" h-auto" />
       </div>
       <div className="absolute flex items-center justify-center top-[35%]">
         <img src={video} alt="video" className="w-[80%]" />
       </div>
       <div className="absolute -bottom-40 right-[30%]">
-        <img
-          src={videoObject02}
-          alt="video object 02"
-          className="w-[1251px] h-auto"
-        />
+        <img src={videoObject02} alt="video object 02" className=" h-auto" />
       </div>
     </div>
   );
