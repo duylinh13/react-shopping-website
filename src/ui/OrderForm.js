@@ -16,13 +16,21 @@ const OrderForm = () => {
       [e.target.name]: e.target.value,
     });
   };
+
   return (
     <div className="p-4  mx-auto">
+      <div className=" bg-white">
+        <div className="w-[137px] h-[28px] mt-[50px] mb-[70px] ml-[100px] text-[#0565bb] font-montserrat text-[36px] font-extrabold leading-[1.67]">
+          ORDER
+        </div>
+      </div>
+
       <div className="flex space-x-4">
         {/* Left Column */}
+
         <div className="p-6 max-w-4xl mx-auto bg-white ">
           {/* Steps Navigation */}
-          <div className="mb-4 flex justify-between">
+          <div className="mb-4 flex justify-start">
             <span>01 Shopping Bag &gt;</span>
             <span className="font-bold text-blue-600">02 Order &gt;</span>
             <span>03 Order Confirmed</span>
@@ -62,128 +70,87 @@ const OrderForm = () => {
                 className=" px-3 py-2 border w-[480px]"
               />
             </div>
-            <div className="mb-4 flex gap-12">
-              <label>
-                배송지 <span className="text-red-500">*</span>
-              </label>
-              <div className="flex">
-                <input type="text" className="w-[350px] h-[44px] border" />
-                <button className="ml-2 border p-2">우편번호 검색</button>
-              </div>
-            </div>
-            <div className="mb-4 ml-[109px]">
-              <input type="text" className="w-[472px] h-[44px] border " />
-            </div>
-            {/* Address */}
-            {/* Contact Numbers */}
-            <div className="mb-4">
-              <label className="block text-gray-700">연락처1 *</label>
-              <div className="flex space-x-2">
-                {shippingInfo.phone1.map((_, idx) => (
-                  <input
-                    key={idx}
-                    type="text"
-                    maxLength="4"
-                    className="w-full px-3 py-2 border rounded-lg"
-                    value={shippingInfo.phone1[idx]}
-                    onChange={(e) => {
-                      const phoneCopy = [...shippingInfo.phone1];
-                      phoneCopy[idx] = e.target.value;
-                      setShippingInfo({ ...shippingInfo, phone1: phoneCopy });
-                    }}
-                  />
-                ))}
-              </div>
-            </div>
-            {/* Add Shipping Address to List */}
-            <div className="flex items-center mb-4">
-              <input type="checkbox" className="mr-2" />
-              <label className="text-gray-700">
-                배송지를 배송지 목록에 추가합니다.
-              </label>
-            </div>
-          </div>
-
-          {/* Payment Method */}
-          <div>
-            <div className="mb-4">
-              <label>배송지 선택</label>
-              <div>
-                <input type="text" className="w-full border" />
-              </div>
-            </div>
-
-            <div className="mb-4">
-              <label>
-                수령인 <span className="text-red-500">*</span>
-              </label>
-              <div>
-                <input type="text" className="w-full border" />
-              </div>
-            </div>
-
-            <div className="mb-4">
-              <label>
-                배송지 <span className="text-red-500">*</span>
-              </label>
-              <div className="flex">
-                <input type="text" className="w-full border" />
-                <button className="ml-2 border p-2">우편번호 검색</button>
-              </div>
-            </div>
-
-            <div className="mb-4">
-              <input type="text" className="w-full border" />
-            </div>
-
-            <div className="mb-4">
+            <div className="mb-4 flex gap-10">
               <label>
                 연락처1 <span className="text-red-500">*</span>
               </label>
               <div className="flex space-x-2">
-                <input type="text" maxLength="3" className="w-12 border" />
-                <input type="text" maxLength="4" className="w-16 border" />
-                <input type="text" maxLength="4" className="w-16 border" />
+                <input
+                  type="text"
+                  maxLength="3"
+                  className="w-[100px] h-[44px] border border-gray-200 bg-white"
+                />
+                <input
+                  type="text"
+                  maxLength="4"
+                  className="w-[100px] h-[44px] border border-gray-200 bg-white"
+                />
+                <input
+                  type="text"
+                  maxLength="4"
+                  className="w-[100px] h-[44px] border border-gray-200 bg-white"
+                />
               </div>
             </div>
-
-            <div className="mb-4">
+            <div className="mb-4 flex gap-12">
               <label>연락처2</label>
               <div className="flex space-x-2">
-                <input type="text" maxLength="3" className="w-12 border" />
-                <input type="text" maxLength="4" className="w-16 border" />
-                <input type="text" maxLength="4" className="w-16 border" />
+                <input
+                  type="text"
+                  maxLength="3"
+                  className="w-[100px] h-[44px] border border-gray-200 bg-white"
+                />
+                <input
+                  type="text"
+                  maxLength="4"
+                  className="w-[100px] h-[44px] border border-gray-200 bg-white"
+                />
+                <input
+                  type="text"
+                  maxLength="4"
+                  className="w-[100px] h-[44px] border border-gray-200 bg-white"
+                />
               </div>
             </div>
-
-            <div className="mb-4">
+            <div className="mb-4 ml-[100px]">
               <input type="checkbox" /> 배송지를 배송지 목록에 추가합니다.
             </div>
-
-            <div className="mb-4">
+            <div className="mb-4 ml-[100px]">
               <div className="relative">
                 <p className=" p-2">배송시 요청사항을 선택해 주세요.</p>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  className="absolute right-2 top-2 w-4 h-4"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                  />
-                </svg>
               </div>
             </div>
           </div>
 
-          <button className="w-full py-3 bg-blue-600 text-white font-bold rounded-lg">
-            주문하기
-          </button>
+          {/* Payment Method */}
+          <div className="mb-6">
+            <div className="border-b border-black pb-4 mb-4">
+              <h4 className="text-lg font-semibold">쿠폰 / 마일리지</h4>
+            </div>
+
+            {/* 쿠폰 */}
+            <div className="mb-4">
+              <label className="block text-gray-700 mb-2">쿠폰</label>
+              <div className="flex">
+                <input
+                  type="text"
+                  className="w-full px-3 py-2 border border-gray-300 "
+                />
+              </div>
+            </div>
+
+            {/* 마일리지 */}
+            <div className="mb-4">
+              <label className="block text-gray-700 mb-2">마일리지</label>
+
+              <div className="flex">
+                <input
+                  type="text"
+                  className="w-full px-3 py-2 border border-gray-300 "
+                />
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Right Column */}
