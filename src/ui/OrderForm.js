@@ -20,7 +20,7 @@ const OrderForm = () => {
     <div className="p-4  mx-auto">
       <div className="flex space-x-4">
         {/* Left Column */}
-        <div className="p-6 max-w-4xl mx-auto bg-white shadow-md">
+        <div className="p-6 max-w-4xl mx-auto bg-white ">
           {/* Steps Navigation */}
           <div className="mb-4 flex justify-between">
             <span>01 Shopping Bag &gt;</span>
@@ -37,37 +37,44 @@ const OrderForm = () => {
 
           {/* Shipping Info Section */}
           <div className="mb-6">
-            <h4 className="font-bold text-lg mb-2">배송정보</h4>
+            <div className="flex justify-between items-center mb-4">
+              <h4 className="font-bold text-lg">배송정보</h4>
+              <p className="text-gray-700 text-sm">* 표시는 필수입력 항목</p>
+            </div>
             {/* Recipient */}
-            <div className="mb-4">
+            <div className="mb-4 flex gap-6">
+              <label className="block text-gray-700">배송지 선택</label>
+              <input
+                type="text"
+                name="recipient"
+                value={shippingInfo.recipient}
+                onChange={handleInputChange}
+                className=" px-3 py-2 border w-[480px]"
+              />
+            </div>{" "}
+            <div className="mb-4 flex gap-12">
               <label className="block text-gray-700">수령인 *</label>
               <input
                 type="text"
                 name="recipient"
                 value={shippingInfo.recipient}
                 onChange={handleInputChange}
-                className="w-full px-3 py-2 border rounded-lg"
+                className=" px-3 py-2 border w-[480px]"
               />
             </div>
-
-            {/* Address */}
-            <div className="mb-4">
-              <label className="block text-gray-700">배송지 *</label>
-              <div className="flex items-center">
-                <input
-                  type="text"
-                  name="postCode"
-                  value={shippingInfo.postCode}
-                  onChange={handleInputChange}
-                  className="w-full px-3 py-2 border rounded-lg"
-                  placeholder="우편번호"
-                />
-                <button className="ml-2 px-4 py-2 bg-black text-white rounded-lg">
-                  우편번호 검색
-                </button>
+            <div className="mb-4 flex gap-12">
+              <label>
+                배송지 <span className="text-red-500">*</span>
+              </label>
+              <div className="flex">
+                <input type="text" className="w-[350px] h-[44px] border" />
+                <button className="ml-2 border p-2">우편번호 검색</button>
               </div>
             </div>
-
+            <div className="mb-4 ml-[109px]">
+              <input type="text" className="w-[472px] h-[44px] border " />
+            </div>
+            {/* Address */}
             {/* Contact Numbers */}
             <div className="mb-4">
               <label className="block text-gray-700">연락처1 *</label>
@@ -88,7 +95,6 @@ const OrderForm = () => {
                 ))}
               </div>
             </div>
-
             {/* Add Shipping Address to List */}
             <div className="flex items-center mb-4">
               <input type="checkbox" className="mr-2" />
