@@ -16,6 +16,25 @@ const OrderForm = () => {
       [e.target.name]: e.target.value,
     });
   };
+  const [selectedMethod, setSelectedMethod] = useState("신용/체크카드");
+
+  const paymentInfo = {
+    "신용/체크카드": [
+      { type: "공지", message: "우리페이 앱 종료에 따른 결제 안내" },
+      { type: "공지", message: "품절 취소시 환불 안내" },
+      { type: "혜택", message: "현대카드 2% 청구할인, 20 % M포인트 사용" },
+      { type: "혜택", message: "신용카드 무이자 할부 안내" },
+    ],
+    현대카드: [{ type: "혜택", message: "현대카드 혜택 안내" }],
+    실시간계좌이체: [{ type: "공지", message: "실시간 계좌이체 결제 안내" }],
+    무통장입금: [{ type: "공지", message: "무통장 입금 안내" }],
+    휴대폰결제: [{ type: "공지", message: "휴대폰 결제 안내" }],
+    네이버페이: [{ type: "혜택", message: "네이버페이 사용 혜택" }],
+    카카오페이: [{ type: "혜택", message: "카카오페이 사용 혜택" }],
+    페이코: [{ type: "혜택", message: "페이코 사용 혜택" }],
+    삼성페이: [{ type: "혜택", message: "삼성페이 사용 혜택" }],
+    토스: [{ type: "혜택", message: "토스 사용 혜택" }],
+  };
 
   return (
     <div className="p-4  mx-auto">
@@ -149,6 +168,84 @@ const OrderForm = () => {
                   className="w-full px-3 py-2 border border-gray-300 "
                 />
               </div>
+            </div>
+          </div>
+          <div className="border-b border-black pb-4 mb-4">
+            <h4 className="text-lg font-semibold">결제방법</h4>
+          </div>
+          <div>
+            {/* Payment Method Buttons */}
+            <div className="grid grid-cols-5 gap-2 mb-4">
+              {Object.keys(paymentInfo).map((method, index) => (
+                <button
+                  key={method}
+                  onClick={() => setSelectedMethod(method)}
+                  className={`border border-gray-300 p-3 text-center rounded-lg ${
+                    selectedMethod === method
+                      ? "bg-orange-500 text-white"
+                      : "bg-white text-black"
+                  }`}
+                >
+                  {method}
+                </button>
+              ))}
+            </div>
+
+            {/* Info Section */}
+            <div className="p-4 border border-gray-200 rounded-lg bg-gray-50 mb-4">
+              <h3 className="text-lg font-semibold mb-3">
+                카드사를 선택해주세요.
+              </h3>
+              <ul>
+                {paymentInfo[selectedMethod].map((info, index) => (
+                  <li key={index} className="flex items-center mb-2">
+                    <span
+                      className={`text-xs font-bold px-2 py-1 mr-2 rounded-lg ${
+                        info.type === "공지"
+                          ? "bg-gray-200 text-black"
+                          : "bg-orange-500 text-white"
+                      }`}
+                    >
+                      {info.type}
+                    </span>
+                    <span className="text-sm">{info.message}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Additional Notices Below */}
+            <div className="p-4 border border-black mt-4">
+              <ul className="space-y-2">
+                <li className="flex items-center">
+                  <span className="text-xs font-bold px-2 py-1 mr-2 rounded-lg bg-gray-200">
+                    공지
+                  </span>
+                  <span className="text-sm">
+                    우리페이 앱 종료에 따른 결제 안내
+                  </span>
+                </li>
+                <li className="flex items-center">
+                  <span className="text-xs font-bold px-2 py-1 mr-2 rounded-lg bg-gray-200">
+                    공지
+                  </span>
+                  <span className="text-sm">품절 취소시 환불 안내</span>
+                </li>
+                <li className="flex items-center">
+                  <span className="text-xs font-bold px-2 py-1 mr-2 rounded-lg bg-orange-500 text-white">
+                    혜택
+                  </span>
+                  <span className="text-sm">
+                    현대카드 2% 청구할인, 20 % M포인트 사용
+                  </span>
+                </li>
+                <li className="flex items-center">
+                  <span className="text-xs font-bold px-2 py-1 mr-2 rounded-lg bg-orange-500 text-white">
+                    혜택
+                  </span>
+                  <span className="text-sm">신용카드 무이자 할부 안내</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
